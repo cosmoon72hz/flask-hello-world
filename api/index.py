@@ -7,9 +7,10 @@ import base64
 
 class GameInfo:
     def __init__(self):
-        self.TitleId: str = "" # Playfab Title Id
-        self.SecretKey: str = "" # Playfab Secret Key
-        self.ApiKey: str = "" # App Api Key
+        self.TitleId: str = "DF2F4" # Playfab Title Id
+        self.SecretKey: str = "UCAKYJEFJJ4GHS74ZK8FC14CFSTQG5TBXBFXBCJH5KUBBDR3A4" # Playfab Secret Key
+        self.ApiKey: str = "OC|30257809467168234|ed97d65060d49f18d88ff9e9415bef57
+" # App Api Key
 
     def get_auth_headers(self):
         return {"content-type": "application/json", "X-SecretKey": self.SecretKey}
