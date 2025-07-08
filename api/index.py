@@ -203,7 +203,7 @@ def title_data():
 
 
 polls = [ # CREDITS TO S4GE, DISCORD.GG/S4GE
-    {"id": 1, "question": "IS S4GE SIGMA??", "options": ["YES", "NO"], "votes": [0, 0], "predictions": [0, 0], "active": True},
+    {"id": 1, "question": "IS COSMO SIGMA??", "options": ["YES", "NO"], "votes": [0, 0], "predictions": [0, 0], "active": True},
     {"id": 2, "question": "PREVIOUS VOTE", "options": ["YES", "NO"], "votes": [999, 999], "predictions": [111, 111], "active": False}
 ]
 
