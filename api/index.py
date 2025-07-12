@@ -137,7 +137,7 @@ def cacheplayfabid():
 
 @app.route("/", methods=["POST", "GET"])
 def Rizz():
-    return "This user has skidded this backend, join discord.gg/apk-land to get it for your self!"
+    return "cosmo hAs made this backend!"
 
 @app.route("/api/TitleData", methods=["POST", "GET"])
 def title_data():
