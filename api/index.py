@@ -380,3 +380,522 @@ def ReturnFunctionJson(data, funcname, funcparam={}):
 
 if __name__ == "__main__":
     app.run(debug=True)
+    QuestThing = {"AllActiveQuests": {
+		"DailyQuests": [
+			{
+				"selectCount": 1,
+				"name": "Gameplay",
+				"quests": [
+					{
+						"disable": false,
+						"questID": 11,
+						"weight": 1,
+						"questName": "PLAY INFECTION",
+						"questType": "gameModeRound",
+						"questOccurenceFilter": "INFECTION",
+						"requiredOccurenceCount": 1,
+						"requiredZones": [
+							"forest",
+							"canyon",
+							"beach",
+							"mountain",
+							"skyJungle",
+							"cave",
+							"Metropolis",
+							"bayou",
+							"rotating",
+							"none"
+						]
+					},
+					{
+						"disable": true,
+						"questID": 19,
+						"weight": 1,
+						"questName": "PLAY PAINTBRAWL",
+						"questType": "gameModeRound",
+						"questOccurenceFilter": "PAINTBRAWL",
+						"requiredOccurenceCount": 1,
+						"requiredZones": [
+							"forest",
+							"canyon",
+							"beach",
+							"mountain",
+							"skyJungle",
+							"cave",
+							"Metropolis",
+							"bayou",
+							"rotating",
+							"none"
+						]
+					},
+					{
+						"disable": false,
+						"questID": 13,
+						"weight": 1,
+						"questName": "PLAY FREEZE TAG",
+						"questType": "gameModeRound",
+						"questOccurenceFilter": "FREEZE TAG",
+						"requiredOccurenceCount": 1,
+						"requiredZones": [
+							"forest",
+							"canyon",
+							"beach",
+							"mountain",
+							"skyJungle",
+							"cave",
+							"Metropolis",
+							"bayou",
+							"rotating",
+							"none"
+						]
+					},
+					{
+						"disable": false,
+						"questID": 1,
+						"weight": 1,
+						"questName": "PLAY GUARDIAN",
+						"questType": "gameModeRound",
+						"questOccurenceFilter": "GUARDIAN",
+						"requiredOccurenceCount": 5,
+						"requiredZones": [
+							"forest",
+							"canyon",
+							"beach",
+							"mountain",
+							"cave",
+							"Metropolis",
+							"bayou",
+							"none"
+						]
+					},
+					{
+						"disable": false,
+						"questID": 4,
+						"weight": 1,
+						"questName": "TAG PLAYERS",
+						"questType": "misc",
+						"questOccurenceFilter": "GameModeTag",
+						"requiredOccurenceCount": 2,
+						"requiredZones": [
+							"none"
+						]
+					}
+				]
+			},
+			{
+				"selectCount": 3,
+				"name": "Exploration",
+				"quests": [
+					{
+						"disable": false,
+						"questID": 5,
+						"weight": 1,
+						"questName": "RIDE THE SHARK",
+						"questType": "grabObject",
+						"questOccurenceFilter": "ReefSharkRing",
+						"requiredOccurenceCount": 1,
+						"requiredZones": [
+							"none"
+						]
+					},
+					{
+						"disable": false,
+						"questID": 9,
+						"weight": 1,
+						"questName": "PLAY THE PIANO",
+						"questType": "tapObject",
+						"questOccurenceFilter": "Piano_Collapsed_Key",
+						"requiredOccurenceCount": 10,
+						"requiredZones": [
+							"none"
+						]
+					},
+					{
+						"disable": false,
+						"questID": 14,
+						"weight": 1,
+						"questName": "THROW SNOWBALLS",
+						"questType": "launchedProjectile",
+						"questOccurenceFilter": "SnowballProjectile",
+						"requiredOccurenceCount": 10,
+						"requiredZones": [
+							"none"
+						]
+					},
+					{
+						"disable": false,
+						"questID": 15,
+						"weight": 1,
+						"questName": "GO FOR A SWIM",
+						"questType": "swimDistance",
+						"questOccurenceFilter": "",
+						"requiredOccurenceCount": 200,
+						"requiredZones": [
+							"none"
+						]
+					},
+					{
+						"disable": false,
+						"questID": 21,
+						"weight": 1,
+						"questName": "CLIMB THE TALLEST TREE",
+						"questType": "enterLocation",
+						"questOccurenceFilter": "TallestTree",
+						"requiredOccurenceCount": 1,
+						"requiredZones": [
+							"forest"
+						]
+					},
+					{
+						"disable": false,
+						"questID": 22,
+						"weight": 1,
+						"questName": "COMPLETE THE OBSTACLE COURSE",
+						"questType": "enterLocation",
+						"questOccurenceFilter": "ObstacleCourse",
+						"requiredOccurenceCount": 1,
+						"requiredZones": [
+							"none"
+						]
+					},
+					{
+						"disable": false,
+						"questID": 23,
+						"weight": 1,
+						"questName": "SWIM UNDER A WATERFALL",
+						"questType": "enterLocation",
+						"questOccurenceFilter": "UnderWaterfall",
+						"requiredOccurenceCount": 1,
+						"requiredZones": [
+							"none"
+						]
+					},
+					{
+						"disable": false,
+						"questID": 24,
+						"weight": 1,
+						"questName": "SNEAK UPSTAIRS IN THE STORE",
+						"questType": "enterLocation",
+						"questOccurenceFilter": "SecretStore",
+						"requiredOccurenceCount": 1,
+						"requiredZones": [
+							"none"
+						]
+					},
+					{
+						"disable": false,
+						"questID": 25,
+						"weight": 1,
+						"questName": "CLIMB INTO THE CROW'S NEST",
+						"questType": "enterLocation",
+						"questOccurenceFilter": "CrowsNest",
+						"requiredOccurenceCount": 1,
+						"requiredZones": [
+							"none"
+						]
+					},
+					{
+						"disable": false,
+						"questID": 26,
+						"weight": 1,
+						"questName": "GO FOR A WALK",
+						"questType": "moveDistance",
+						"questOccurenceFilter": "",
+						"requiredOccurenceCount": 500,
+						"requiredZones": [
+							"none"
+						]
+					},
+					{
+						"disable": false,
+						"questID": 28,
+						"weight": 1,
+						"questName": "GET SMALL",
+						"questType": "misc",
+						"questOccurenceFilter": "SizeSmall",
+						"requiredOccurenceCount": 1,
+						"requiredZones": [
+							"none"
+						]
+					},
+					{
+						"disable": false,
+						"questID": 29,
+						"weight": 1,
+						"questName": "GET BIG",
+						"questType": "misc",
+						"questOccurenceFilter": "SizeLarge",
+						"requiredOccurenceCount": 1,
+						"requiredZones": [
+							"none"
+						]
+					},
+					{
+						"disable": false,
+						"questID": 31,
+						"weight": 1,
+						"questName": "ADD A CRITTER TO YOUR COLLECTION",
+						"questType": "critter",
+						"questOccurenceFilter": "Collect",
+						"requiredOccurenceCount": 1,
+						"requiredZones": [
+							"none"
+						]
+					},
+					{
+						"disable": false,
+						"questID": 32,
+						"weight": 1,
+						"questName": "DONATE A CRITTER",
+						"questType": "critter",
+						"questOccurenceFilter": "Donate",
+						"requiredOccurenceCount": 1,
+						"requiredZones": [
+							"none"
+						]
+					}
+				]
+			},
+			{
+				"selectCount": 1,
+				"name": "Social",
+				"quests": [
+					{
+						"disable": false,
+						"questID": 2,
+						"weight": 1,
+						"questName": "HIGH FIVE PLAYERS",
+						"questType": "triggerHandEffect",
+						"questOccurenceFilter": "HIGH_FIVE",
+						"requiredOccurenceCount": 10,
+						"requiredZones": [
+							"none"
+						]
+					},
+					{
+						"disable": false,
+						"questID": 3,
+						"weight": 1,
+						"questName": "FIST BUMP PLAYERS",
+						"questType": "triggerHandEffect",
+						"questOccurenceFilter": "FIST_BUMP",
+						"requiredOccurenceCount": 10,
+						"requiredZones": [
+							"none"
+						]
+					},
+					{
+						"disable": false,
+						"questID": 16,
+						"weight": 1,
+						"questName": "FIND SOMETHING TO EAT",
+						"questType": "eatObject",
+						"questOccurenceFilter": "",
+						"requiredOccurenceCount": 1,
+						"requiredZones": [
+							"none"
+						]
+					},
+					{
+						"disable": false,
+						"questID": 30,
+						"weight": 1,
+						"questName": "MAKE A FRIENDSHIP BRACELET",
+						"questType": "misc",
+						"questOccurenceFilter": "FriendshipGroupJoined",
+						"requiredOccurenceCount": 1,
+						"requiredZones": [
+							"none"
+						]
+					}
+				]
+			}
+		],
+		"WeeklyQuests": [
+			{
+				"selectCount": 1,
+				"name": "Gameplay",
+				"quests": [
+					{
+						"disable": false,
+						"questID": 17,
+						"weight": 1,
+						"questName": "PLAY INFECTION",
+						"questType": "gameModeRound",
+						"questOccurenceFilter": "INFECTION",
+						"requiredOccurenceCount": 5,
+						"requiredZones": [
+							"none"
+						]
+					},
+					{
+						"disable": true,
+						"questID": 20,
+						"weight": 1,
+						"questName": "PLAY PAINTBRAWL",
+						"questType": "gameModeRound",
+						"questOccurenceFilter": "PAINTBRAWL",
+						"requiredOccurenceCount": 5,
+						"requiredZones": [
+							"none"
+						]
+					},
+					{
+						"disable": false,
+						"questID": 8,
+						"weight": 1,
+						"questName": "PLAY FREEZE TAG",
+						"questType": "gameModeRound",
+						"questOccurenceFilter": "FREEZE TAG",
+						"requiredOccurenceCount": 5,
+						"requiredZones": [
+							"none"
+						]
+					},
+					{
+						"disable": false,
+						"questID": 10,
+						"weight": 1,
+						"questName": "PLAY GUARDIAN",
+						"questType": "gameModeRound",
+						"questOccurenceFilter": "GUARDIAN",
+						"requiredOccurenceCount": 25,
+						"requiredZones": [
+							"none"
+						]
+					},
+					{
+						"disable": false,
+						"questID": 12,
+						"weight": 1,
+						"questName": "TAG PLAYERS",
+						"questType": "misc",
+						"questOccurenceFilter": "GameModeTag",
+						"requiredOccurenceCount": 10,
+						"requiredZones": [
+							"none"
+						]
+					}
+				]
+			},
+			{
+				"selectCount": 1,
+				"name": "Exploration and Social",
+				"quests": [
+					{
+						"disable": false,
+						"questID": 33,
+						"weight": 1,
+						"questName": "COLLECT CRITTERS",
+						"questType": "critter",
+						"questOccurenceFilter": "Collect",
+						"requiredOccurenceCount": 5,
+						"requiredZones": [
+							"none"
+						]
+					},
+					{
+						"disable": false,
+						"questID": 34,
+						"weight": 1,
+						"questName": "DONATE CRITTERS",
+						"questType": "critter",
+						"questOccurenceFilter": "Donate",
+						"requiredOccurenceCount": 10,
+						"requiredZones": [
+							"none"
+						]
+					},
+					{
+						"disable": false,
+						"questID": 6,
+						"weight": 1,
+						"questName": "THROW SNOWBALLS",
+						"questType": "launchedProjectile",
+						"questOccurenceFilter": "SnowballProjectile",
+						"requiredOccurenceCount": 50,
+						"requiredZones": [
+							"none"
+						]
+					},
+					{
+						"disable": false,
+						"questID": 7,
+						"weight": 1,
+						"questName": "GO FOR A LONG SWIM",
+						"questType": "swimDistance",
+						"questOccurenceFilter": "",
+						"requiredOccurenceCount": 1000,
+						"requiredZones": [
+							"none"
+						]
+					},
+					{
+						"disable": false,
+						"questID": 18,
+						"weight": 1,
+						"questName": "EAT FOOD",
+						"questType": "eatObject",
+						"questOccurenceFilter": "",
+						"requiredOccurenceCount": 25,
+						"requiredZones": [
+							"none"
+						]
+					},
+					{
+						"disable": false,
+						"questID": 27,
+						"weight": 1,
+						"questName": "GO FOR A LONG WALK",
+						"questType": "moveDistance",
+						"questOccurenceFilter": "",
+						"requiredOccurenceCount": 2500,
+						"requiredZones": [
+							"none"
+						]
+					}
+				]
+			}
+		]
+	}
+}
+
+
+
+@app.route("/api/GetDailyQuests", methods=["GET", "POST", "PUT"])
+def skid():
+    return jsonify(QuestThing), 200
+    polls = [ # CREDITS TO S4GE, DISCORD.GG/S4GE
+    {"id": 1, "question": "IS S4GE SIGMA??", "options": ["YES", "NO"], "votes": [0, 0], "predictions": [0, 0], "active": True},
+    {"id": 2, "question": "PREVIOUS VOTE", "options": ["YES", "NO"], "votes": [999, 999], "predictions": [111, 111], "active": False}
+]
+
+@app.route("/api/FetchPoll", methods=["POST"]) # CREDITS TO S4GE, DISCORD.GG/S4GE
+def fetch_poll():
+    logger.info("[POLL] Fetch polls request")
+    return jsonify(polls), 200
+
+@app.route("/api/SubmitVote", methods=["POST"]) # CREDITS TO S4GE, DISCORD.GG/S4GE
+def submit_vote():
+    payload = request.get_json() or {}
+    poll_id = payload.get("PollId")
+    user = payload.get("PlayFabId")
+    choice = payload.get("OptionIndex")
+    prediction = payload.get("IsPrediction")
+
+    poll = next((p for p in polls if p["id"] == poll_id), None)
+    if not poll or not poll["active"] or choice not in range(len(poll["options"])):
+        logger.error("[POLL] Invalid vote attempt: poll %s, choice %s", poll_id, choice)
+        return jsonify({"status": "error", "message": "Invalid poll or option."}), 400
+
+    key = "predictions" if prediction else "votes"
+    poll[key][choice] += 1
+    logger.info("[POLL] Updated %s for user %s on poll %s", key, user, poll_id)
+
+    return jsonify({
+        "status": "success",
+        "pollId": poll_id,
+        "option": poll["options"][choice],
+        "newCount": poll[key][choice]
+    }), 200
+
