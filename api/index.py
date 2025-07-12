@@ -137,7 +137,7 @@ def cacheplayfabid():
 
 @app.route("/", methods=["POST", "GET"])
 def Rizz():
-    return "cosmo hAs made this backend!"
+    return "cosmo has made this backend!"
 
 @app.route("/api/TitleData", methods=["POST", "GET"])
 def title_data():
