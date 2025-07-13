@@ -898,7 +898,8 @@ def submit_vote():
         "option": poll["options"][choice],
         "newCount": poll[key][choice]
     }), 200
-	@app.route("/GetFriends", methods=["POST", "GET"])
+	
+@app.route("/GetFriends", methods=["POST", "GET"])
 def get_friends():
     data = request.get_json()
     pID = data.get("PlayFabId")
