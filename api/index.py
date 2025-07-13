@@ -860,17 +860,7 @@ if __name__ == "__main__":
 	}
 }
 
-@app.route("api/GetFriends", methods=["POST", "GET"])
-def get_friends():
-    data = request.get_json()
-    pID = data.get("PlayFabId")
-    url = f"https://{settings.TitleId}.playfabapi.com/Server/GetFriendsList"
-    headers = {
-        "X-SecretKey": Settings.SecretKey,
-        "Content-Type": "application/json"
-    }
-    payload = {
-        "PlayFabId": pID,
+
     }
     res = requests.post(url, headers=headers, json=payload)
     return jsonify(res.json()), res.status_code
