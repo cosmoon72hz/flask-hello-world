@@ -853,6 +853,15 @@ if __name__ == "__main__":
 						"requiredZones": [
 							"none"
 						]
+					}
+				]
+			}
+		]
+	}
+}
+
+
+
 @app.route("/api/GetDailyQuests", methods=["GET", "POST", "PUT"])
 def skid():
     return jsonify(QuestThing), 200
@@ -889,9 +898,3 @@ def submit_vote():
         "option": poll["options"][choice],
         "newCount": poll[key][choice]
     }), 200
-					}
-				]
-			}
-		]
-	}
-}
