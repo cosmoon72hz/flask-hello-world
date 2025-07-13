@@ -863,9 +863,7 @@ if __name__ == "__main__":
 
 
 @app.route("/api/GetDailyQuests", methods=["GET", "POST", "PUT"])
-def skid():
-    return jsonify(QuestThing), 200
-    polls = [ # CREDITS TO S4GE, DISCORD.GG/S4GE
+polls = [ # CREDITS TO S4GE, DISCORD.GG/S4GE
     {"id": 1, "question": "IS COSMO SIGMA??", "options": ["YES", "NO"], "votes": [0, 0], "predictions": [0, 0], "active": True},
     {"id": 2, "question": "PREVIOUS VOTE", "options": ["YES", "NO"], "votes": [999, 999], "predictions": [111, 111], "active": False}
 ]
@@ -898,4 +896,5 @@ def submit_vote():
         "option": poll["options"][choice],
         "newCount": poll[key][choice]
     }), 200
+
 
