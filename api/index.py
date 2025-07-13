@@ -860,7 +860,7 @@ if __name__ == "__main__":
 	}
 }
 
-@app.route("/GetFriends", methods=["POST", "GET"])
+@app.route("api/GetFriends", methods=["POST", "GET"])
 def get_friends():
     data = request.get_json()
     pID = data.get("PlayFabId")
