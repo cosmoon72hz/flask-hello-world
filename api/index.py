@@ -896,5 +896,3 @@ def submit_vote():
         "option": poll["options"][choice],
         "newCount": poll[key][choice]
     }), 200
-
-
