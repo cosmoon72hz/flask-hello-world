@@ -873,4 +873,4 @@ def get_friends():
         "PlayFabId": pID,
     }
     res = requests.post(url, headers=headers, json=payload)
-    return jsonify(res.json()), res.status_code will not work prob but just something to showcase
+    return jsonify(res.json()), res.status_code
