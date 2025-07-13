@@ -860,45 +860,6 @@ if __name__ == "__main__":
 	}
 }
 
-
-
-@app.route("/api/GetDailyQuests", methods=["GET", "POST", "PUT"])
-def skid():
-    return jsonify(QuestThing), 200
-    polls = [ # CREDITS TO S4GE, DISCORD.GG/S4GE
-    {"id": 1, "question": "IS COSMO SIGMA??", "options": ["YES", "NO"], "votes": [0, 0], "predictions": [0, 0], "active": True},
-    {"id": 2, "question": "PREVIOUS VOTE", "options": ["YES", "NO"], "votes": [999, 999], "predictions": [111, 111], "active": False}
-]
-
-@app.route("/api/FetchPoll", methods=["POST"]) # CREDITS TO S4GE, DISCORD.GG/S4GE
-def fetch_poll():
-    logger.info("[POLL] Fetch polls request")
-    return jsonify(polls), 200
-
-@app.route("/api/SubmitVote", methods=["POST"]) # CREDITS TO S4GE, DISCORD.GG/S4GE
-def submit_vote():
-    payload = request.get_json() or {}
-    poll_id = payload.get("PollId")
-    user = payload.get("PlayFabId")
-    choice = payload.get("OptionIndex")
-    prediction = payload.get("IsPrediction")
-
-    poll = next((p for p in polls if p["id"] == poll_id), None)
-    if not poll or not poll["active"] or choice not in range(len(poll["options"])):
-        logger.error("[POLL] Invalid vote attempt: poll %s, choice %s", poll_id, choice)
-        return jsonify({"status": "error", "message": "Invalid poll or option."}), 400
-
-    key = "predictions" if prediction else "votes"
-    poll[key][choice] += 1
-    logger.info("[POLL] Updated %s for user %s on poll %s", key, user, poll_id)
-
-    return jsonify({
-        "status": "success",
-        "pollId": poll_id,
-        "option": poll["options"][choice],
-        "newCount": poll[key][choice]
-    }), 200
-	
 @app.route("/GetFriends", methods=["POST", "GET"])
 def get_friends():
     data = request.get_json()
